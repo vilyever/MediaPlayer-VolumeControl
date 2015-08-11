@@ -54,8 +54,7 @@
 #pragma mark Private Instance Method
 
 #pragma mark Public Class Method
-+ (UISlider *)volumeSlider
-{
++ (UISlider *)volumeSlider {
     static UISlider *VolumeSlider = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -71,19 +70,16 @@
     return VolumeSlider;
 }
 
-+ (float)currentVolume
-{
++ (float)currentVolume {
     return [self volumeSlider].value;
 }
 
-+ (void)setVolume:(float)volume
-{
++ (void)setVolume:(float)volume {
     [[self volumeSlider] setValue:volume animated:NO];
     [[self volumeSlider] sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 
-+ (void)raiseVolume:(float)deltaVolume
-{
++ (void)raiseVolume:(float)deltaVolume {
     [self setVolume:[self currentVolume] + deltaVolume];
 }
 
