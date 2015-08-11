@@ -4,7 +4,7 @@
 ## Import
 [CocoaPods](http://cocoapods.org)
 
-`pod 'MediaPlayer-VolumeControl', '~> 1.0.0'`
+`pod 'MediaPlayer-VolumeControl', '~> 1.0.1'`
 
 ## Usage
 ```objective-c
