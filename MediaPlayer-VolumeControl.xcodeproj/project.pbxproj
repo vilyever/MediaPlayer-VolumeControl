@@ -15,6 +15,8 @@
 		FEF352581B79F4690070C6D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF352571B79F4690070C6D5 /* Images.xcassets */; };
 		FEF3525B1B79F4690070C6D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF352591B79F4690070C6D5 /* LaunchScreen.xib */; };
 		FEF352671B79F4690070C6D5 /* MediaPlayer_VolumeControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF352661B79F4690070C6D5 /* MediaPlayer_VolumeControlTests.m */; };
+		FEF352741B79F47B0070C6D5 /* MediaPlayer-VolumeControl.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FEF352701B79F47B0070C6D5 /* MediaPlayer-VolumeControl.podspec */; };
+		FEF352771B79F5B70070C6D5 /* VDMediaVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF352761B79F5B70070C6D5 /* VDMediaVolume.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		FEF352601B79F4690070C6D5 /* MediaPlayer-VolumeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MediaPlayer-VolumeControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF352651B79F4690070C6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF352661B79F4690070C6D5 /* MediaPlayer_VolumeControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayer_VolumeControlTests.m; sourceTree = "<group>"; };
+		FEF352701B79F47B0070C6D5 /* MediaPlayer-VolumeControl.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MediaPlayer-VolumeControl.podspec"; sourceTree = "<group>"; };
+		FEF352751B79F5B70070C6D5 /* VDMediaVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDMediaVolume.h; sourceTree = "<group>"; };
+		FEF352761B79F5B70070C6D5 /* VDMediaVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDMediaVolume.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,8 @@
 				FEF352461B79F4690070C6D5 /* MediaPlayer-VolumeControl */,
 				FEF352631B79F4690070C6D5 /* MediaPlayer-VolumeControlTests */,
 				FEF352451B79F4690070C6D5 /* Products */,
+				FEF352701B79F47B0070C6D5 /* MediaPlayer-VolumeControl.podspec */,
+				FEF352711B79F47B0070C6D5 /* Pod */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +127,31 @@
 				FEF352651B79F4690070C6D5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF352711B79F47B0070C6D5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FEF352721B79F47B0070C6D5 /* Assets */,
+				FEF352731B79F47B0070C6D5 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FEF352721B79F47B0070C6D5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FEF352731B79F47B0070C6D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEF352751B79F5B70070C6D5 /* VDMediaVolume.h */,
+				FEF352761B79F5B70070C6D5 /* VDMediaVolume.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF352561B79F4690070C6D5 /* Main.storyboard in Resources */,
+				FEF352741B79F47B0070C6D5 /* MediaPlayer-VolumeControl.podspec in Resources */,
 				FEF3525B1B79F4690070C6D5 /* LaunchScreen.xib in Resources */,
 				FEF352581B79F4690070C6D5 /* Images.xcassets in Resources */,
 			);
@@ -225,6 +258,7 @@
 				FEF352501B79F4690070C6D5 /* MediaPlayer_VolumeControl.xcdatamodeld in Sources */,
 				FEF3524D1B79F4690070C6D5 /* AppDelegate.m in Sources */,
 				FEF352531B79F4690070C6D5 /* ViewController.m in Sources */,
+				FEF352771B79F5B70070C6D5 /* VDMediaVolume.m in Sources */,
 				FEF3524A1B79F4690070C6D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
