@@ -1,5 +1,5 @@
 # MediaPlayer-VolumeControl
-调节音量。
+调节音量
 
 ## Import
 [CocoaPods](http://cocoapods.org)
@@ -11,9 +11,9 @@
 
 #import "VDMediaVolume.h"
 
-[VDMediaVolume currentVolume];
-[VDMediaVolume setVolume:0.5f];
-[VDMediaVolume raiseVolume:0.1f];
+[VDMediaVolume currentVolume]; // 获取当前音量 
+[VDMediaVolume setVolume:0.5f]; // 设置音量 
+[VDMediaVolume raiseVolume:0.1f]; // 增加音量 
 
 ```
 ## License
